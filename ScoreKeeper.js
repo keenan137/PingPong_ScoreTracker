@@ -114,7 +114,7 @@ scoreLimitSelect.addEventListener("change", (e) => {
 	}
 	resetGame();
 
-	// required: remove focus from this element as it will cause conflict when user uses numpad or up/down arrows
+	// Required: remove focus from this element as it will cause conflict when user uses numpad or up/down arrows
 	document.activeElement.blur();
 });
 
