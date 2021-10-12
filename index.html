@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div id="item-1">
+            <span>
+                Ping-Pong Score Keeper
+            </span>
+        </div>
+        <div id="item-4">
+            <label for="score-limit-select">Play Up To:</label>
+            <select name="limit" id="score-limit-select">
+                <option selected value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </div>
+        <div id="item-2">
+            <span id="player-1">
+                0
+            </span>
+            <span id="player-vs">
+                to
+            </span>
+            <span id="player-2">
+                0
+            </span>
+        </div>
+        <div id="item-3">
+            <div id="button-1">
+                <button name="Player-1-scores">
+                    Player 1 +
+                </button>
+            </div>
+            <div id="button-2">
+                <button name="Player-2-scores">
+                    Player 2 +
+                </button>
+            </div>
+            <div id="button-3">
+                <button name="Reset-Scores">
+                    Reset
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="ScoreKeeper.js"></script>
+</body>
+
+</html>
