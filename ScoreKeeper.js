@@ -107,12 +107,15 @@ resetBtn.addEventListener("click", function (e) {
 });
 
 // If the score limit changes the game should be set back to its initial state:
-scoreLimitSelect.addEventListener("change", () => {
+scoreLimitSelect.addEventListener("change", (e) => {
 	if (isGameRunning) {
 		player1.scoreBtn.classList.toggle("disable-button");
 		player2.scoreBtn.classList.toggle("disable-button");
 	}
 	resetGame();
+
+	// required: remove focus from this element as it will cause conflict when user uses numpad or up/down arrows
+	document.activeElement.blur();
 });
 
 // Disable player1.scoreBtn & player2.scoreBtn because the game has reached its end.
