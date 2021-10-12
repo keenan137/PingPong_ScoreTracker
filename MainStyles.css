@@ -3,7 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	text-align: center;
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -120,6 +120,6 @@ button:focus {
 
 .disable-button {
 	color: gray !important;
-	background-color: darkolivegreen !important;
+	background-color: lightgray !important;
 	border-radius: inherit;
 }
